@@ -47,7 +47,7 @@
       })
       .catch(function () {
         status.classList.add('is-error');
-        status.textContent = 'Sorry, that didn’t go through. Please email brew@ichibancoffee.com or call +91 98840 61496.';
+        status.textContent = 'Sorry, that didn’t go through. Please email coffeeichiban@gmail.com or call +91 98840 61496.';
       })
       .then(function () { button.disabled = false; });
   });
