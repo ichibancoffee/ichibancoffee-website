@@ -228,3 +228,22 @@ h1 { font-size: clamp(52px, 6.4vw, 92px); line-height: 1; color: var(--cream); }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/* SEO additions */
+.h1-sub { display: block; font-size: .42em; line-height: 1.2; margin-top: 14px; color: var(--caramel); font-style: italic; font-weight: 500; }
+.intro { font-size: 18px; max-width: 760px; margin: -36px 0 48px; }
+.section--dark .intro { color: var(--muted-light); }
+.faq { display: grid; grid-template-columns: 420px 1fr; gap: 80px; align-items: start; }
+.faq .h2 { margin-bottom: 20px; }
+.faq .intro { margin: 0; }
+.faq__list details { border-top: 1px solid var(--line); padding: 22px 0; }
+.faq__list details:last-child { border-bottom: 1px solid var(--line); }
+.faq__list summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+.faq__list summary::-webkit-details-marker { display: none; }
+.faq__list summary::after { content: '+'; font-size: 28px; color: var(--rust); line-height: 1; flex-shrink: 0; }
+.faq__list details[open] summary::after { content: '−'; }
+.faq__list h3 { font-family: var(--serif); font-weight: 600; font-size: 26px; line-height: 1.2; color: var(--espresso); margin: 0; }
+.faq__list p { margin-top: 12px; max-width: 720px; }
+.faq__list a { color: var(--rust); font-weight: 600; }
+@media (max-width: 1180px) { .faq { grid-template-columns: 1fr; gap: 32px; } }
+@media (max-width: 680px) { .intro { font-size: 16px; margin: -20px 0 32px; } .faq__list h3 { font-size: 22px; } }

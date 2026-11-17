@@ -43,6 +43,7 @@
       .then(function (res) {
         if (!res.ok || String(res.body.success) === 'false') throw new Error(res.body.message || 'Failed');
         form.reset();
+        if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form_name: 'enquiry' });
         status.textContent = 'Thank you. We’ve received your enquiry and will be in touch shortly.';
       })
       .catch(function () {
