@@ -61,10 +61,10 @@ h1 { font-size: clamp(52px, 6.4vw, 92px); line-height: 1; color: var(--cream); }
 .hero {
   background-color: var(--espresso);
   background-image:
-    linear-gradient(90deg, rgba(43,29,22,.92) 0%, rgba(43,29,22,.82) 32%, rgba(43,29,22,.18) 42%, rgba(43,29,22,.1) 60%, rgba(43,29,22,.35) 100%),
+    linear-gradient(90deg, rgba(43,29,22,.94) 0%, rgba(43,29,22,.9) 38%, rgba(43,29,22,.2) 47%, rgba(43,29,22,.08) 62%, rgba(43,29,22,.35) 100%),
     url('https://images.unsplash.com/photo-1636797955936-7e493b8ba922?w=2400&q=80&auto=format&fit=crop');
-  background-size: cover, auto 118%;
-  background-position: center, 100% 2%;
+  background-size: cover, 122% auto;
+  background-position: center, 82% 4%;
   background-repeat: no-repeat;
 }
 .hero__inner { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding-top: 96px; padding-bottom: 96px; min-height: 780px; }
