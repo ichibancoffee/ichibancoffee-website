@@ -167,6 +167,10 @@ h1 { font-size: clamp(52px, 6.4vw, 92px); line-height: 1; color: var(--cream); }
 .footer nav { display: flex; flex-wrap: wrap; gap: 32px; }
 .footer a { text-decoration: none; font-size: 15px; font-weight: 500; }
 .footer a:hover { color: var(--cream); }
+.footer__social { display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px 9px 12px; border: 1px solid var(--line-dark); border-radius: 999px; white-space: nowrap; transition: color .2s, border-color .2s, background-color .2s; }
+.footer__social:hover { color: var(--cream); border-color: var(--caramel); background: rgba(224,138,92,.08); }
+.footer__social svg { flex: none; }
+.footer__social span { font-size: 14px; font-weight: 500; }
 .footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 1px solid var(--line-dark); padding-top: 24px; }
 .footer__bottom a { font-size: 14px; font-weight: 400; }
 
