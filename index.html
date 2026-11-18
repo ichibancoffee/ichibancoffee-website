@@ -7,6 +7,11 @@
 <meta name="description" content="Order estate-grown Coorg coffee beans direct from our 40-year-old plantation at 1,094m in Palangala, Kodagu, Karnataka. Shade-grown, 100% sun-dried Fine Robusta and Arabica for roasters, cafés and bulk buyers. Request a sample or quote.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://ichibancoffee.com/">
+<link rel="alternate" hreflang="en" href="https://ichibancoffee.com/">
+<link rel="alternate" hreflang="ja" href="https://ichibancoffee.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://ichibancoffee.com/ko/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ichibancoffee.com/zh/">
+<link rel="alternate" hreflang="x-default" href="https://ichibancoffee.com/">
 <meta name="geo.region" content="IN-KA">
 <meta name="geo.placename" content="Palangala, Coorg (Kodagu), Karnataka, India">
 <meta property="og:type" content="website">
@@ -48,7 +53,12 @@
    "@id": "https://ichibancoffee.com/#website",
    "url": "https://ichibancoffee.com/",
    "name": "Ichiban Coffee",
-   "inLanguage": "en-GB",
+   "inLanguage": [
+    "en-GB",
+    "ja",
+    "ko",
+    "zh-Hans"
+   ],
    "publisher": {
     "@id": "https://ichibancoffee.com/#org"
    }
@@ -91,7 +101,7 @@
    "@type": "WebPage",
    "@id": "https://ichibancoffee.com/#webpage",
    "url": "https://ichibancoffee.com/",
-   "name": "Coorg Coffee Beans | Estate Robusta & Arabica from Coorg, India",
+   "name": "Coorg Coffee Beans | Estate Robusta & Arabica from Coorg, India | Ichiban Coffee",
    "isPartOf": {
     "@id": "https://ichibancoffee.com/#website"
    },
@@ -104,6 +114,7 @@
   {
    "@type": "FAQPage",
    "@id": "https://ichibancoffee.com/#faq",
+   "inLanguage": "en-GB",
    "mainEntity": [
     {
      "@type": "Question",
@@ -172,8 +183,8 @@
       <a href="#sustainability">Sustainability</a>
       <a href="#supply">Supply</a>
       <a href="#contact">Contact</a>
-      <a href="#enquiry" class="btn btn--primary nav__cta">Request a sample</a>
     </nav>
+    <nav class="lang" aria-label="Language" translate="no"><a href="./" hreflang="en" lang="en" aria-current="page">EN</a><a href="ja/" hreflang="ja" lang="ja">日本語</a><a href="ko/" hreflang="ko" lang="ko">한국어</a><a href="zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a></nav>
   </div>
 </header>
 
@@ -188,10 +199,11 @@
         <p class="hero__meta">Palangala, Coorg, Karnataka · 1,094m MSL</p>
       </div>
 
-      <form class="form" id="enquiry" action="https://formsubmit.co/coffeeichiban@gmail.com" method="POST">
+      <form class="form" id="enquiry" action="https://formsubmit.co/coffeeichiban@gmail.com" method="POST" data-msg-sending="Sending…" data-msg-success="Thank you. We’ve received your enquiry and will be in touch shortly." data-msg-error="Sorry, that didn’t go through. Please email coffeeichiban@gmail.com or call +91 98840 61496.">
         <h2 class="form__title">Request a sample or quote</h2>
         <input type="hidden" name="_subject" value="New enquiry from ichibancoffee.com">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="language" value="English">
         <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form__row">
           <label>Name<input type="text" name="name" placeholder="Your name" autocomplete="name" required></label>
