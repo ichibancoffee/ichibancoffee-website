@@ -286,3 +286,11 @@ html:lang(ko) body { word-break: keep-all; }
 html:lang(ja) body { line-break: strict; }
 
 .nb { display: inline-block; }
+
+/* Centre the main menu between logo and language switch (desktop) */
+@media (min-width: 901px) {
+  .nav__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .nav__logo { justify-self: start; }
+  .nav__links { margin: 0; justify-self: center; }
+  .lang { justify-self: end; }
+}
