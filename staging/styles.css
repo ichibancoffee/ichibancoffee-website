@@ -284,3 +284,5 @@ html:lang(ja) .facts__num, html:lang(ko) .facts__num, html:lang(zh-Hans) .facts_
 html:lang(ja) .row__stat, html:lang(ko) .row__stat, html:lang(zh-Hans) .row__stat { font-size: 40px; }
 html:lang(ko) body { word-break: keep-all; }
 html:lang(ja) body { line-break: strict; }
+
+.nb { display: inline-block; }
