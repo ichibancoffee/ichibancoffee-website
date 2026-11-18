@@ -23,12 +23,17 @@
   if (!form || !window.fetch) return;
   var status = form.querySelector('.form__status');
   var button = form.querySelector('button[type="submit"]');
+  var msg = {
+    sending: form.dataset.msgSending || 'Sending…',
+    success: form.dataset.msgSuccess || 'Thank you. We’ve received your enquiry and will be in touch shortly.',
+    error: form.dataset.msgError || 'Sorry, that didn’t go through. Please email coffeeichiban@gmail.com or call +91 98840 61496.'
+  };
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (form._honey && form._honey.value) return;
     status.classList.remove('is-error');
-    status.textContent = 'Sending…';
+    status.textContent = msg.sending;
     button.disabled = true;
 
     var data = {};
@@ -44,11 +49,11 @@
         if (!res.ok || String(res.body.success) === 'false') throw new Error(res.body.message || 'Failed');
         form.reset();
         if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form_name: 'enquiry' });
-        status.textContent = 'Thank you. We’ve received your enquiry and will be in touch shortly.';
+        status.textContent = msg.success;
       })
       .catch(function () {
         status.classList.add('is-error');
-        status.textContent = 'Sorry, that didn’t go through. Please email coffeeichiban@gmail.com or call +91 98840 61496.';
+        status.textContent = msg.error;
       })
       .then(function () { button.disabled = false; });
   });
